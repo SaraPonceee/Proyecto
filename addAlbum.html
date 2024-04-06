@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="favicon.ico">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <title>Nuevo Album</title>
+</head>
+
+<body class="bg-slate-950">
+    <div class="bg-orange-100 text-center p-10 border-4 border-orange-500 m-10 mx-20 rounded-3xl">
+    <div>
+        <h1>Nuevo Album</h1>
+    </div>
+
+    <form action="addAlbum.html" method="get">
+        <label>Título
+            <input type="text" placeholder="Título del nuevo album" name="nuevo_album">
+        </label>
+        <br> <br>
+        <label>Año del lanzamiento del album
+            <input type="number" min="1990" max="2025" placeholder="Fecha de lanzamiento" name="fecha_lanzamiento">
+        </label>
+        <br> <br>
+        <label>Descripción
+            <textarea placeholder="Descripción del nuevo album" name="descripcion" id="" cols="30" rows="10"></textarea>
+        </label>
+        <br> <br>
+        <label>Portada del album
+            <input type="text" placeholder="Pega acá la URL de la portada del album" name="portada_album">
+            <br>
+        </label>
+        <button type="submit">Subir</button>
+    </form>
+</div>
+
+</body>
+
+</html>

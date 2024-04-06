@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="favicon.ico">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <title>Log in</title>
+</head>
+
+<body class="bg-slate-950">
+    <div class="bg-orange-100 text-center p-10 border-4 border-orange-500 m-10 mx-20 rounded-3xl">
+        <h3>Log in</h3>
+
+        <form action="https://formspree.io/f/mbjnzvwo" method="post">
+
+            <label>Correo electrónico
+                <input type="text" placeholder="Correo electrónico" name="nombre_usuario" required>
+            </label>
+            <br> <br>
+            <label>Contraseña
+                <input type="password" placeholder="Contraseña" name="password_usuario" required>
+            </label>
+            <br> <br>
+            <button type="submit">Log in</button>
+        </form>
+
+        <div>
+            <p>¿Aún no sos miembro?</p>
+            <a href="signUp.html">Regístrate</a>
+        </div>
+    </div>
+
+</body>
+
+</html>

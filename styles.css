@@ -1,0 +1,108 @@
+#titulo {
+    padding: 30px 10px 30px;
+    margin: 15px 470px 15px;
+    border-radius: 50px;
+    border: 4px solid black;
+    text-align: center;
+    font-size: 35px;
+    letter-spacing: 4px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    animation-name: change-color;
+    animation-duration: 5s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+}
+
+@keyframes change-color {
+    0% {
+        background: rgb(255, 72, 0);
+        color: wheat;
+    }
+
+    25% {
+        background: rgb(255, 121, 0);
+        color: burlywood;
+    }
+
+    50%{ background: rgb(255, 182, 0);
+        color: black;
+    }
+
+    75%{
+        background: rgb(255, 121, 0);
+        color: burlywood;
+    }
+
+    100% {
+        background: rgb(255, 72, 0);
+        color: wheat;
+    }
+}
+
+/* * {
+    background-color: rgb(37, 36, 34);
+    text-align: center;
+} */
+
+/* .descripcion {
+    background-color: antiquewhite;
+    padding: 40px;
+    border: 2px solid black;
+    border-radius: 30px;
+    margin: px 45px 30px;
+    font-size: 18px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+div {
+    margin: 100px solid rgb(246, 221, 211);
+
+}
+
+h2{
+    background-color: antiquewhite;
+    font-size: 40px;
+    font-style: italic;
+    text-align: center;
+    
+}
+
+.canciones {
+    background-color: antiquewhite;
+    padding: 40px;
+    padding-top: 2px;
+    border: 2px solid black;
+    border-radius: 20px;
+    margin-left: 400px;
+    margin-right: 400px;
+    
+}
+
+#lista, li{
+    background-color: antiquewhite;
+    margin: 10px;
+    text-align: center;
+    list-style-position: outside;
+    list-style-type: upper-roman;
+}
+*/
+
+
+
+
+img {
+    border: 10px ridge white;
+}
+ 
+
+/* 
+    Dale a tu paǵina un color de fondo, también deberás darle color a cada sección para generar contraste.
+
+    Elegí una tipografía, un color y un tamaño de fuente para cada sección.
+
+    Utilizá lo visto acerca del modelo de caja para estilar los distintos componentes, dándoles un padding y un margin en caso de ser necesario.
+
+    Centrá los títulos y la sección "canciones".
+
+    Estilá el link para escuchar la canción. Deberá diferecniarse de los títulos de las canciones.
+ */

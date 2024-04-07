@@ -5,12 +5,75 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="icon" href="favicon.ico">
+    <!-- CSS -->
+    <link rel="stylesheet" href="CSS/styles.css">
     <script src="https://cdn.tailwindcss.com"></script>
-    <title>Log in</title>
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,300;0,400;1,300;1,400&display=swap"
+        rel="stylesheet">
+    <title>Stray kids</title>
 </head>
 
-<body class="bg-slate-950">
-    <div class="bg-orange-100 text-center p-10 border-4 border-orange-500 m-10 mx-20 rounded-3xl">
+<body class="font-[Poppins] h-14 bg-gradient-to-r from-zinc-900 via-violet-900 to-zinc-900">
+    <!-- Navbar -->
+    <header class="bg-white">
+        <nav class="flex justify-between items-center w-[92%] mx-auto">
+            <div>
+                <img class="w-16 rounded-full p-2"
+                    src="https://i.pinimg.com/736x/88/12/72/881272bc899c59771fc6884f3c5a9347.jpg" alt="logo">
+            </div>
+            <div class="">
+                <ul class="flex items-center gap-[4vw]">
+                    <li>
+                        <a class="hover:text-pray-500" href="tour.html">Tour</a>
+                    </li>
+                    <li>
+                        <a class="hover:text-pray-500" href="addSongs.html">Add Songs</a>
+                    </li>
+                    <li>
+                        <a class="hover:text-pray-500" href="index.html">Home</a>
+                    </li>
+                    <li>
+                        <a class="hover:text-pray-500" href="addAlbum.html">Add Album</a>
+                    </li>
+                    <li>
+                        <a class="hover:text-pray-500" href="signUp.html">Log Out</a>
+                    </li>
+                </ul>
+            </div>
+            <div>
+                <a href="signUp.html">
+                    <button class="bg-[#ca7df9] text-white px-5 py-2 rounded-full hover:bg-[#f896d8]">Sign In</button>
+                </a>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Contenido -->
+
+    <form action="https://formspree.io/f/mbjnzvwo" method="post" class="text-center bg-orange-100 p-10 border-2 border-black m-10 mx-96 rounded-3xl">
+        <h3 class="text-4xl text-violet-700">Log In</h3>
+        <br> <br>
+        <label>E-mail
+            <input type="email" placeholder="Ingrese su correo electrónico" name="email_usuario" required class="text-center w-56 rounded-md py-1.5 px-2 ring-1 ring-inset ring-gray-400 focus:text-gray-800">
+        </label>
+        <br> <br>
+        <label>Contraseña
+            <input type="password" placeholder="Ingrese su contraseña" name="password_usuario" required class="text-center w-56 rounded-md py-1.5 px-2 ring-1 ring-inset ring-gray-400 focus:text-gray-800">
+        </label>
+        <br> <br>
+        <button type="submit" class="bg-[#ca7df9] text-white px-5 py-2 rounded-full hover:bg-[#f896d8]">Abrir cuenta</button>
+
+        <div class="my-4">
+            <p class="my-2">¿Aún no sos miembro?</p>
+            <a href="signUp.html" class="text-xl text-violet-700">Regístrate</a>
+        </div>
+
+
+    </form>
+ <!--    <div class="bg-orange-100 text-center p-10 border-4 border-orange-500 m-10 mx-20 rounded-3xl">
         <h3>Log in</h3>
 
         <form action="https://formspree.io/f/mbjnzvwo" method="post">
@@ -31,7 +94,7 @@
             <a href="signUp.html">Regístrate</a>
         </div>
     </div>
-
+ -->
 </body>
 
 </html>

@@ -5,36 +5,89 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="icon" href="favicon.ico">
+    <!-- CSS -->
+    <link rel="stylesheet" href="CSS/styles.css">
     <script src="https://cdn.tailwindcss.com"></script>
-    <title>Nuevo Album</title>
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,300;0,400;1,300;1,400&display=swap"
+        rel="stylesheet">
+    <title>Stray kids</title>
 </head>
 
-<body class="bg-slate-950">
-    <div class="bg-orange-100 text-center p-10 border-4 border-orange-500 m-10 mx-20 rounded-3xl">
-    <div>
-        <h1>Nuevo Album</h1>
-    </div>
+<body class="font-[Poppins] h-14 bg-gradient-to-r from-zinc-900 via-violet-900 to-zinc-900">
+    <!-- Navbar -->
+    <header class="bg-white">
+        <nav class="flex justify-between items-center w-[92%] mx-auto">
+            <div>
+                <img class="w-16 rounded-full p-2"
+                    src="https://i.pinimg.com/736x/88/12/72/881272bc899c59771fc6884f3c5a9347.jpg" alt="logo">
+            </div>
+            <div class="">
+                <ul class="flex items-center gap-[4vw]">
+                    <li>
+                        <a class="hover:text-pray-500" href="tour.html">Tour</a>
+                    </li>
+                    <li>
+                        <a class="hover:text-pray-500" href="addSongs.html">Add Songs</a>
+                    </li>
+                    <li>
+                        <a class="hover:text-pray-500" href="index.html">Home</a>
+                    </li>
+                    <li>
+                        <a class="hover:text-pray-500" href="addAlbum.html">Add Album</a>
+                    </li>
+                    <li>
+                        <a class="hover:text-pray-500" href="signUp.html">Log Out</a>
+                    </li>
+                </ul>
+            </div>
+            <div>
+                <a href="signUp.html">
+                    <button class="bg-[#ca7df9] text-white px-5 py-2 rounded-full hover:bg-[#f896d8]">Sign In</button>
+                </a>
+            </div>
+        </nav>
+    </header>
 
-    <form action="addAlbum.html" method="get">
-        <label>Título
-            <input type="text" placeholder="Título del nuevo album" name="nuevo_album">
-        </label>
-        <br> <br>
-        <label>Año del lanzamiento del album
-            <input type="number" min="1990" max="2025" placeholder="Fecha de lanzamiento" name="fecha_lanzamiento">
-        </label>
-        <br> <br>
-        <label>Descripción
-            <textarea placeholder="Descripción del nuevo album" name="descripcion" id="" cols="30" rows="10"></textarea>
-        </label>
-        <br> <br>
-        <label>Portada del album
-            <input type="text" placeholder="Pega acá la URL de la portada del album" name="portada_album">
-            <br>
-        </label>
-        <button type="submit">Subir</button>
-    </form>
-</div>
+    <!-- Contenido -->
+    
+    <h1 class="tituloStrayKids">Nuevo album</h1>
+
+
+    <div class="text-center bg-orange-100 p-10 border-2 border-black m-10 mx-40 rounded-3xl">
+
+
+        <form>
+            <div class="mb-4">
+                <label class="block mb-2 text-violet-700 text-xl" for="tituloAlbum"> Título del Album </label>
+                <input placeholder="Título del album"
+                    class="w-full p-2 border-b-2 border-violet-400 bg-transparent outline-none focus:border-b-2 focus:border-indigo-600"
+                    type="text" name="tituloAlbum" />
+            </div>
+            <div class="mb-4">
+                <label class="block mb-2 text-violet-700 text-xl" for="url"> URL </label>
+                <input placeholder="URL"
+                    class="w-full p-2 border-b-2 border-violet-400 bg-transparent outline-none focus:border-b-2 focus:border-indigo-600"
+                    name="url" type="text"/>
+            </div>
+            <div class="mb-4">
+                <label class="block mb-2 text-violet-700 text-xl" for="descripcion"> Descripción </label>
+                <textarea placeholder="Tu descripción"
+                    class="w-full p-2 border-b-2 border-violet-400 bg-transparent outline-none focus:border-b-2 focus:border-indigo-600"
+                    rows="4" name="descripcion"></textarea>
+            </div>
+            <div class="mb-4">
+                <button
+                    class="w-full bg-[#ca7df9] text-gray-700 font-semibold p-2 rounded transition-all hover:bg-[#f896d8]"
+                    type="submit">
+                    Submit
+                </button>
+            </div>
+        </form>
+
+    </div>
 
 </body>
 

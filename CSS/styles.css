@@ -1,0 +1,78 @@
+.tituloStrayKids,
+h1 {
+    padding: 30px 30px;
+    margin: 15px 470px 15px;
+    border-radius: 50px;
+    border: 2px solid black;
+    text-align: center;
+    font-size: 35px;
+    letter-spacing: 4px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    animation-name: change-color;
+    animation-duration: 15s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+}
+
+@keyframes change-color {
+    0% {
+        background: rgb(255, 247, 250);
+        color: black;
+    }
+
+    25% {
+        background: rgb(215, 175, 255);
+        color: burlywood;
+    }
+
+    50% {
+        background: rgb(205, 124, 255);
+        color: rgb(252, 217, 195);
+    }
+
+    75% {
+        background: rgb(215, 175, 255);
+        color: burlywood;
+    }
+
+    100% {
+        background: rgb(255, 247, 250);
+        color: black;
+    }
+}
+
+#albums {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    width: 1200px;
+    height: 460px;
+    margin: 0 auto;
+    margin-bottom: 100px;
+}
+
+#albums img {
+    width: 200px;
+    flex-grow: 1;
+    object-fit: cover;
+    opacity: .6;
+    transition: .5s ease;
+    border: 2px solid rgb(47, 46, 48);
+    max-width: 100%;
+    display: inline;
+}
+
+#albums img:hover {
+    cursor: pointer;
+    width: 270px;
+    opacity: 1;
+    filter: contrast(120%);
+}
+
+
+.portadas img{
+    width: 300px;
+    margin-top: 50px;
+    border: 6px outset rgb(184, 139, 255);
+}

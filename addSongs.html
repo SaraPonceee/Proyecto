@@ -27,19 +27,19 @@
             <div class="">
                 <ul class="flex items-center gap-[4vw]">
                     <li>
-                        <a class="hover:text-pray-500" href="tour.html">Tour</a>
+                        <a class="hover:text-purple-600" href="tour.html">Tour</a>
                     </li>
                     <li>
-                        <a class="hover:text-pray-500" href="addSongs.html">Add Songs</a>
+                        <a class="hover:text-purple-600" href="addSongs.html">Add Songs</a>
                     </li>
                     <li>
-                        <a class="hover:text-pray-500" href="index.html">Home</a>
+                        <a class="hover:text-purple-600" href="index.html">Home</a>
                     </li>
                     <li>
-                        <a class="hover:text-pray-500" href="addAlbum.html">Add Album</a>
+                        <a class="hover:text-purple-600" href="addAlbum.html">Add Album</a>
                     </li>
                     <li>
-                        <a class="hover:text-pray-500" href="signUp.html">Log Out</a>
+                        <a class="hover:text-purple-600" href="signUp.html">Log Out</a>
                     </li>
                 </ul>
             </div>
@@ -51,30 +51,26 @@
         </nav>
     </header>
 
-    <!-- Contenido -->
-
     <h1 class="tituloStrayKids">Nueva Canción</h1>
 
 
     <div class="text-center bg-orange-100 p-10 border-2 border-black m-10 mx-40 rounded-3xl">
-
-
-        <form>
+        <form id="formSong" action="/" method="get">
             <div class="mb-4">
                 <label class="block mb-2 text-violet-700 text-xl" for="tituloCancion"> Título de la canción </label>
-                <input placeholder="Título de la canción"
-                    class="w-full p-2 border-b-2 border-violet-400 bg-transparent outline-none focus:border-b-2 focus:border-indigo-600"
-                    type="text" name="tituloCancion" />
+                <input id="tituloCancion" name="tituloCancion" type="text"
+                    placeholder="Escriba aquí el título de la canción."
+                    class="w-full p-2 border-b-2 border-violet-400 bg-transparent outline-none focus:border-b-2 focus:border-indigo-600" />
             </div>
             <div class="mb-4">
                 <label class="block mb-2 text-violet-700 text-xl" for="url"> URL </label>
                 <input placeholder="URL"
                     class="w-full p-2 border-b-2 border-violet-400 bg-transparent outline-none focus:border-b-2 focus:border-indigo-600"
-                    name="url" type="text"/>
+                    name="url" type="text" />
             </div>
             <div class="mb-4">
-                <label class="block mb-2 text-violet-700 text-xl" for="descripcion"> Descripción </label>
-                <textarea placeholder="Tu descripción"
+                <label class="block mb-2 text-violet-700 text-xl" for="descripcionCancion"> Descripción </label>
+                <textarea id="descripcionCancion" name="descripcionCancion" type="text" placeholder="Escriba aquí la descripción de la canción."
                     class="w-full p-2 border-b-2 border-violet-400 bg-transparent outline-none focus:border-b-2 focus:border-indigo-600"
                     rows="4" name="descripcion"></textarea>
             </div>
@@ -86,9 +82,10 @@
                 </button>
             </div>
         </form>
-
     </div>
 
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert"></script>
+    <script src="login.js"></script>
 </body>
 
 </html>

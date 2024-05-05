@@ -13,6 +13,8 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,300;0,400;1,300;1,400&display=swap"
         rel="stylesheet">
+    <!-- Ticket icon -->
+    <script src="https://kit.fontawesome.com/b98ee23ae5.js" crossorigin="anonymous"></script>
     <title>Stray kids - TOUR</title>
 </head>
 
@@ -27,19 +29,19 @@
             <div class="">
                 <ul class="flex items-center gap-[4vw]">
                     <li>
-                        <a class="hover:text-pray-500" href="tour.html">Tour</a>
+                        <a class="hover:text-purple-600" href="tour.html">Tour</a>
                     </li>
                     <li>
-                        <a class="hover:text-pray-500" href="addSongs.html">Add Songs</a>
+                        <a class="hover:text-purple-600" href="addSongs.html">Add Songs</a>
                     </li>
                     <li>
-                        <a class="hover:text-pray-500" href="index.html">Home</a>
+                        <a class="hover:text-purple-600" href="index.html">Home</a>
                     </li>
                     <li>
-                        <a class="hover:text-pray-500" href="addAlbum.html">Add Album</a>
+                        <a class="hover:text-purple-600" href="addAlbum.html">Add Album</a>
                     </li>
                     <li>
-                        <a class="hover:text-pray-500" href="signUp.html">Log Out</a>
+                        <a class="hover:text-purple-600" href="signUp.html">Log Out</a>
                     </li>
                 </ul>
             </div>
@@ -55,6 +57,11 @@
 
     <h1 class="tituloStrayKids">Tour dates</h1>
 
+    <div class="text-center bg-orange-100 p-10 border-2 border-black m-10 mx-96 p-6 rounded-3xl">
+        <span id="welcome"></span>
+        <i class="fa-solid fa-ticket fa-rotate-by" style="color: #9573fb; --fa-rotate-angle: 0deg;"></i>
+    </div>
+
     <div class="flex place-content-around text-center bg-orange-100 border-2 border-black rounded-3xl p-10 my-8 mx-20">
         <div>
             <div class="my-3.5">February 21</div>
@@ -67,26 +74,42 @@
 
         <div>
             <div class="my-3.5">Melbourne, Australia</div>
-            <div class="my-3.5">Sydney, Australia</div>
-            <div class="my-3.5">Los Angeles, United States</div>
-            <div class="my-3.5">London, England</div>
-            <div class="my-3.5">Moscow, Russia</div>
+            <div class="my-3.5">Sídney, Australia</div>
+            <div class="my-3.5">Miami, Estados Unidos</div>
+            <div class="my-3.5">Londres, Inglaterra</div>
+            <div class="my-3.5">Moscú, Rusia</div>
             <div class="my-3.5">Yokohama, Japan</div>
         </div>
 
         <div>
-            <div class="my-3.5"><button class="bg-[#ca7df9] text-white rounded-full hover:bg-[#f55d3e] w-40">Sold Out</button></div>
-            <div class="my-3.5"><button class="bg-[#ca7df9] text-white rounded-full hover:bg-[#f55d3e] w-40">Sold Out</button></div>
-            <div class="my-3.5"><button class="bg-[#ca7df9] text-white rounded-full hover:bg-[#f896d8] w-40">Tickets</button></div>
-            <div class="my-3.5"><button class="bg-[#ca7df9] text-white rounded-full hover:bg-[#f896d8] w-40">Tickets</button></div>
-            <div class="my-3.5"><button class="bg-[#ca7df9] text-white rounded-full hover:bg-[#f896d8] w-40">Tickets</button></div>
-            <div class="my-3.5"><button class="bg-[#ca7df9] text-white rounded-full hover:bg-[#f896d8] w-40">Tickets</button></div>
+            <div class="my-3.5">
+                <button id="melbourne-boton" onclick="getTickets('Melbourne', 'melbourne-boton')"
+                    class="botonesTickets bg-[#ca7df9] text-white rounded-full hover:bg-[#f896d8] w-40">Tickets</button>
+            </div>
+            <div class="my-3.5">
+                <button id="sidney-boton" onclick="getTickets('Sidney', 'sidney-boton')"
+                    class="botonesTickets bg-[#ca7df9] text-white rounded-full hover:bg-[#f896d8] w-40">Tickets</button>
+            </div>
+            <div class="my-3.5">
+                <button id="miami-boton" onclick="getTickets('Miami', 'miami-boton')"
+                    class="botonesTickets bg-[#ca7df9] text-white rounded-full hover:bg-[#f896d8] w-40">Tickets</button>
+            </div>
+            <div class="my-3.5">
+                <button id="londres-boton" onclick="getTickets('Londres', 'londres-boton')"
+                    class="botonesTickets bg-[#ca7df9] text-white rounded-full hover:bg-[#f896d8] w-40">Tickets</button>
+            </div>
+            <div class="my-3.5">
+                <button id="moscu-boton" onclick="getTickets('Moscu', 'moscu-boton')"
+                    class="botonesTickets bg-[#ca7df9] text-white rounded-full hover:bg-[#f896d8] w-40">Tickets</button>
+            </div>
+            <div class="my-3.5">
+                <button id="yokohama-boton" onclick="getTickets('Yokohama', 'yokohama-boton')"
+                    class="botonesTickets bg-[#ca7df9] text-white rounded-full hover:bg-[#f896d8] w-40">Tickets</button>
+            </div>
         </div>
 
     </div>
 
-
-
-
-
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert"></script>
+    <script src="tours.js"></script>
 </body>
